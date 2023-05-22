@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "ClientCode&Sequence_1",
         "CourseEmails&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
