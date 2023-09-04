@@ -1,0 +1,68 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RPA_Challenge_InvoiceExtraction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "index&Sequence_1",
+        "strOutput&Sequence_1",
+        "dataSet&Sequence_1",
+        "ValidatedExtractionResults&Sequence_1",
+        "ExtractionResult&Sequence_1",
+        "ClassificationResullts&Sequence_1",
+        "DigitalText&Sequence_1",
+        "DOM&Sequence_1",
+        "Taxonomy&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtResponse",
+        "in_DocPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InvoiceExtraction_Practice1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DownloadInvoices.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtResponse&Sequence_1",
+        "TextDTOutput&Sequence_2",
+        "InvoiceDocumentPath&Sequence_1",
+        "InvoiceURL&Sequence_1",
+        "ResponseCSVFilePath&Sequence_1",
+        "InvoiceInputFolder&Sequence_1",
+        "InvoiceHeaders&Sequence_1",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,1350.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Global Exception Handler:&#xD;&#xA;&#xD;&#xA;Is a type of workflow designed to determine the project's behaviour when encoutering an execution error.&#xD;&#xA;&#xD;&#xA;Only one Global Exception Handler can be set per automation project&#xD;&#xA;&#xD;&#xA;GEH has two arguments, that should not be removed&#xD;&#xA;&#xD;&#xA;1. errorInfo -- In argument stores the information about the error&#xD;&#xA;2. result -- Out argument direction used for determining the next behaviour of the process when it encounters an error. The follwing values can be assigned&#xD;&#xA; &gt;&gt;Continue - The exception is re-thrown.&#xD;&#xA;&gt;&gt;Ignore - The exception is ignored, and the execution continues from the next activity.&#xD;&#xA;&gt;&gt;Retry - The activity which threw the exception is retried. Use the &gt;&gt;RetryCount method for errorInfo to count the number of times the activity is retried.&#xD;&#xA;&gt;&gt;Abort - The execution stops after running the current Global Exception Handler&#xD;&#xA;&#xD;&#xA;To control the workflow’s behavior in case of an error, the Global Exception Handler retries the activity three times and then aborts with an error message." DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="545.6,1285.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: GHDemo - Notepad" sap:VirtualizedContainerService.HintSize="483.2,841.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="38691ce6-3d89-49d0-840d-a2e36c080cc4" Timeout="3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,550.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="38691ce6-3d89-49d0-840d-a2e36c080cc4" Text="Tutorial for Global Handler" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 93, 1424, 599" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'RichEditD2DPT'" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="de720833-9dec-4b77-a66b-242fe57ec058" ImageBase64="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" InformativeScreenshot="bab4cd68371986b70123841ec5cd3a89.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='GHDemo - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="387.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="368, 253, 1440, 740" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATRSURBVFhHtdVbc1NVFAfwvvhQkyfvfgvEL6ADtFCsLaUVW7G0tQoqSkUooha8zvDikw/qkxUdZ4BhpEVAaJqUJFxaoWlD06ZJmmvTFrklqM/LtfY5+2SfuE+yT5Pumf9k5gSyf11rZaVG5TzS9+06TJJe9UfsWD2nY/We1fOKDn5YDgP0qj9ix+o5Hav3rJ7bOkcj/67D5DBwZP4f+jAjn8w9hI9nH8Lh2bzpef/MAzh4i3IfDgTvm977YOou9AXuwD6M+Hzvzdvw7g3KSu6dP1fUK0o4gg1gPg3/Dc7+H4wPJdjhUB4+CuXw+ffGcw77MHgP9k/fA4fwHsH2Td6B9yf/AsfBwnOEAcLg7YllinpFCTaAMMJRxXr9SYZsPDOJsDwcQlz/TA66x+IM2XD6BsIQhzDCUcV2uqMMWX9qgsHeu0m5De0j8wy58cR1xDEY7JlYgt3jS6BfX/5oMA3H28lhhxDWz1r5gFWMVU2Aie0UYXu1VrKK8artoSCMcG9dz6oDi2HUTgYrmjPezv1TGk6EcZwwZ2I7TbA3KdcW1YHinGkwc9WonWbYXdOccZi5av+HMRzCejFvXM2oA63aWTxnfUrtNM/Z7nEOyzJY71UN13PFBtDunBlVU5gz3k5etR5M95U0dPvT6sDScyZvZ7k5K24nwXp0WJc/Bbt8KXWgrJ3PfvGzsb8qzVOfHWdV6xJwnb6kOlA2Z7KLKokIe92LuZxQB8rm7JnPq1jBoz8xWCfBvAnYibjXLsfVgdWaM+3baZ6zXQYsyWAMh79IHRj9+vJHXBuW+8xibZhgkjnj7RRhHZ4FaMfo15c/8n1msTYk+4yvDRFmamcR7FV3DHZg9OvLHzs/T6XWRqGdhTnTcBym40Zj8MpoVB0ogz2Nq0E28KvJE/gl4VUjGKXNFVEHyuZMdlElEWGtI5R5daDs56mqFTwyyGActx1xLZdsAFc3Z8VrQz5nba5C1Qi2HWEtl8Kw7WJYHah9OyX7zGJtmGFxBhO/nbJ2irDmi3PQ/MecOlBlbZTaZxy2owyM4RDWhHn5wqw60Kqdsp8neTsLsOI5M6qmw5oQRrjG8yF1oGzOnsTVIBv41eTxgUHEFWAvUc7NqANlcya7qJI0XghpuHMh2Iq4ht9tAE3t1OesmhV8bOBHVjWCabhbsAWjX1/+2Pl5Kl4b5eaMt1OEbT4bhM3DQXUgwcRvp2xtlNpnfG0Yc2a00wzbQjBMPeLqhqfVgVZrg2B21oZszhjurFY1gtUjrG5oGjYNTakDS+2zcu0kmNjO4jnj7RRhG89QAurALqxeteeMtbMItonBpmDDbwHYOmyjgufHA9Dp4Ti7c1Zop2zOxKoRjOGGAnDS7VcHBoNB8Pl84PV6YWxszBSPxyON2+02Mjo6aorL5TIyMjJiCr1Pn+v32wAmo2FIp9OQTCaNJBIJI/F43MjCwoKRWCxmSjQaNRKJRKShf8f+b9jGov66/XnIJGKwsrICy8vLRpaWlkzJZrNGFhcXjWQyGVPoj+VJpVJG6A+n13hkFo51rFcHflNXC1+9WAtfvrD2oXuObaiF7xoeVQf+ss2RP97sgMGmtQ/dg/fBry2OvH59+XO6zfncyVZn7kSrE9Y6eA+canPm6E79euHU1PwHBiSQobPvwrkAAAAASUVORK5CYII=" InformativeScreenshot="968ef081b29f65a5796101cebb04c238.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='GHDemo - Notepad' /&gt;" Title="GHDemo - Notepad" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KohC9az6jkaKYa_bc_-TWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rpachallenge.com/" CvType="Button" DesignTimeRectangle="21, 990, 436, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'msedge.exe Rpa Challenge'" Guid="2bc3f0b4-607a-4fb2-a4ee-0c7dd366da76" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Rpa Challenge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="21, 936, 432, 48" CvTextArea="128, 951, 175, 17" CvTextArgument="DOWNLOAD EXCEL" CvType="Button" DesignTimeRectangle="22, 935, 431, 48" ElementType="Button" FriendlyName="'DOWNLOAD EXCEL'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="841688652336654cb8568ea5807182d3.png" xmlns="">0exDkXGEZ20eAEHil9ctuhA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
